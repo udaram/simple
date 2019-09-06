@@ -1,0 +1,149 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+
+}
+body{
+    font-size: 20px;
+    overflow-x: hidden;
+    color: aliceblue;
+    font-family: 'Flamenco', cursive;
+}
+
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../images/background.jpeg');
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+
+.clearfix:after{
+    content:".";
+    visibility: hidden;
+    display: block;
+    height: 0px;
+    clear: both;
+}
+
+.navbar{
+    max-width: 1180px;
+    margin: 0 auto;
+}
+.logo{
+    height: 20px;
+    width:auto;
+    float:left;
+    margin-top:20px;
+}
+.main-nav{
+    float:right;
+    margin-top:50px;
+    margin-right: 20px;
+}
+
+.main-nav li{
+    display: inline-block;
+    list-style:None;
+    margin-left:30px;
+}
+
+.main-nav li a{
+    padding: 5px 0;
+    color:#fff;
+    text-decoration: none;
+    font-size:100%;
+    font-weight: 100vh;
+}
+.main-nav li a:hover{
+    border-bottom:2px solid #bf55ec;
+}
+
+.main-content-header{
+    width: 1180px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+h1{
+    color:rgb(213, 224, 212);
+    font-size: 240%;
+    word-spacing: 5px;
+    letter-spacing:3 px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.btn{
+    display: inline-block;
+    padding:10px 30px;
+    text-decoration: none;
+    font-weight: lighter;
+    border-radius: 200px;
+    transition: background-color 0.2s,border 0.2s,color 0.2;
+}
+
+.btn-read{
+    background-color: transparent;
+    color:#bf55ec;
+    margin-right:15px;
+    border: 2px solid #bf55ec;
+}
+
+.btn-read:hover{
+    background-color:#fff;
+}
+
+.colorchange{
+    text-decoration: underline;
+    animation: colorchangeuda 1s infinite;
+}
+
+@keyframes colorchangeuda{
+    0%{color:red}
+    25%{color:purple}
+    50%{color:white}
+    100%{color:purple}
+}
+
+.mobile-icon{
+    display: none;
+}
+
+/* responsive query */
+@media only screen and (max-width:1180px){
+    .main-content-header{
+        width: 100%;
+        padding:0 2%;
+    }
+}
+@media only screen and (max-width:998px){
+    h1{
+        font-size:200%;
+    }
+}
+@media only screen and (max-width:768px){
+    h1{
+        font-size:180%;
+    }
+    .main-nav{display: none;}
+    .mobile-icon{
+        display: inline-block;
+        color:white;
+        float: right;
+        margin-top: 30px;
+        margin-right: 20px; 
+
+    }
+    .main-nav{
+        float: left;
+    }
+    .main-nav li{
+        display: block;
+        margin-top:10px;
+    }
+
+
+}

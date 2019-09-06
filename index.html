@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html1>
+    <head>
+        <title>My Portfolio </title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Flamenco&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+         <header>
+            <nav>
+                <div class ="navbar clearfix">
+                    <img src="images/logo.png" class="logo">
+                    <ul class="main-nav animated slideInDown" id="check-class" >
+                        <li><a href="#">ABOUT ME</a></li>
+                        <li><a href="#">EDUCATION</a></li>
+                        <li><a href="#">PROJECTS</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                    </ul>
+                    <a href="#" class="mobile-icon" onclick="slideshow()"><i class="fa fa-bars" aria-hidden="true"></i></a>
+                </div>
+            </nav>
+            <div class="main-content-header">
+                <h1>Hi,I'm <span class="colorchange">Udaram Prajapat</span></h1>
+                <a herf="#" class="btn btn-read">READ MORE</a>
+            </div>
+            
+         </header>
+         <script type="text/javascript">
+            function slideshow(){
+                    var x=document.getElementById('check-class');
+                    if(x.style.display==="none"){
+                        x.style.display="block";
+                    }
+                    else{
+                        x.style.display="none";
+                    }
+            }
+         </script>
+    </body>
+</html1> 
